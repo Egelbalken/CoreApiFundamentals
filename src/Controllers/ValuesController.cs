@@ -8,7 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace CoreCodeCamp.Controllers
 {
   [Route("api/[controller]")]
-  public class ValuesController
+  [ApiController]
+  public class ValuesController : ControllerBase
   {
 
     public string[] Get()
